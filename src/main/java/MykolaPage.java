@@ -33,10 +33,13 @@ public class MykolaPage extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet MykolaPage</title>");            
+            out.println("<title>Servlet MykolaPage</title>");        
+            out.println("<link rel=\"stylesheet\" href=\"WebContent/css/style.css\">");          
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>Servlet MykolaPage at '" + request.getRequestURL() + "'</h1>");
+            out.println("<p>His profile image is follow: </p>");
+            out.println("<img src=\"WebContent/imgs/Mykola_profile_img_2.jpg\" alt=\"profile img\" class=\"profile_img\"/>");
             out.println("</body>");
             out.println("</html>");
         }
